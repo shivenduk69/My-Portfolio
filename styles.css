@@ -679,6 +679,18 @@ html[data-theme="light"] .sun-icon {
     align-items: start;
 }
 
+.achievements-container {
+    grid-template-columns: 1.1fr 0.9fr;
+}
+
+.personal-info-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    font-size: 0.95rem;
+}
+
 .about-lead {
     font-size: 1.4rem;
     font-weight: 500;
@@ -1373,7 +1385,8 @@ html[data-theme="light"] .sun-icon {
         font-size: 1.8rem;
     }
     
-    .about-content {
+    .about-content,
+    .achievements-container {
         grid-template-columns: 1fr;
         gap: 40px;
     }
@@ -1478,6 +1491,10 @@ html[data-theme="light"] .sun-icon {
     
     .scroll-indicator {
         display: none; /* Hide scroll mouse on smaller mobile screens */
+    }
+
+    .personal-info-grid {
+        grid-template-columns: 1fr;
     }
     
     /* Timeline layouts */
