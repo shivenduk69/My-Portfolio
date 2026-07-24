@@ -22,7 +22,7 @@
     --border-radius-sm: 8px;
     --border-radius-md: 16px;
     --border-radius-lg: 24px;
-    --container-max-width: 1200px;
+    --container-max-width: 1350px;
     --transition-fast: 0.2s ease;
     --transition-normal: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -724,6 +724,12 @@ html[data-theme="light"] .sun-icon {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+}
+
+@media (min-width: 576px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
 }
 
 .skill-card {
